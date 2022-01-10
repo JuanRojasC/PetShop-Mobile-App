@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingHorizontal="20dp"
+    android:orientation="vertical"
+    tools:context=".ui.config.ProductConfigFragment">
+
+    <TextView
+        android:id="@+id/titleNewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/config_product_title"
+        android:textColor="#0097A7"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/main_blue"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <include layout="@layout/fg_new_product_form" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnUpdateProduct"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_button_blue"
+        android:text="@string/update_text"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:fontWeight="900"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/main_blue"/>
+
+    <Button
+        android:id="@+id/btnDeleteProduct"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/main_red"
+        android:text="@string/delete_text"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:fontWeight="900"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

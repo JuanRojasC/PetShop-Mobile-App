@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.start.StartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/customers"
+            android:textColor="@color/main_yellow"
+            android:textColorHighlight="@color/main_yellow"
+            android:textColorHint="@color/main_yellow"
+            android:textColorLink="@color/main_yellow"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:fontWeight="900" />
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/main_yellow"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="8dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutProducts"
+                    android:layout_width="180dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgProducts"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_blue"
+                        android:contentDescription="@string/pets_toys"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/toys_pets" />
+
+                    <Button
+                        android:id="@+id/btnProducts"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_blue"
+                        android:padding="0dp"
+                        android:text="@string/menu_products"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutServices"
+                    android:layout_width="200dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <ImageView
+                        android:id="@+id/imgServices"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_yellow"
+                        android:contentDescription="@string/menu_services"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/dogs_shower" />
+
+                    <Button
+                        android:id="@+id/btnServices"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_yellow"
+                        android:padding="0dp"
+                        android:text="@string/menu_services"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutStores"
+                    android:layout_width="200dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <ImageView
+                        android:id="@+id/imgStores"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_red"
+                        android:contentDescription="@string/menu_stores"
+                        android:padding="18dp"
+                        app:srcCompat="@drawable/pet_shop" />
+
+                    <Button
+                        android:id="@+id/btnStores"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_red"
+                        android:padding="0dp"
+                        android:text="@string/menu_stores"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutFavorites"
+                    android:layout_width="200dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgFavorites"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_blue"
+                        android:contentDescription="@string/menu_stores"
+                        android:padding="25dp"
+                        app:srcCompat="@drawable/ic_favorites" />
+
+                    <Button
+                        android:id="@+id/btnFavorites"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_blue"
+                        android:padding="0dp"
+                        android:text="@string/favoritos"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="15sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/admin_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Administración"
+            android:textColor="@color/main_red"
+            android:textColorHighlight="@color/main_red"
+            android:textColorHint="@color/main_red"
+            android:textColorLink="@color/main_red"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:fontWeight="900" />
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/main_red"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="8dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutProductsManagment"
+                    android:layout_width="180dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgProductsManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_yellow"
+                        android:contentDescription="@string/pets_toys"
+                        android:padding="28dp"
+                        app:srcCompat="@drawable/ic_create_product" />
+
+                    <Button
+                        android:id="@+id/btnProductsManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_yellow"
+                        android:padding="0dp"
+                        android:text="@string/managment_products"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutServicesManagment"
+                    android:layout_width="200dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <ImageView
+                        android:id="@+id/imgServicesManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_red"
+                        android:contentDescription="@string/menu_services"
+                        android:padding="28dp"
+                        app:srcCompat="@drawable/ic_services" />
+
+                    <Button
+                        android:id="@+id/btnServicesManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_red"
+                        android:padding="0dp"
+                        android:text="@string/managment_services"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="13sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutStoresManagment"
+                    android:layout_width="200dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <ImageView
+                        android:id="@+id/imgStoresManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_blue"
+                        android:contentDescription="@string/menu_stores"
+                        android:padding="28dp"
+                        app:srcCompat="@drawable/ic_stores" />
+
+                    <Button
+                        android:id="@+id/btnStoresManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_blue"
+                        android:padding="0dp"
+                        android:text="@string/managment_stores"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnLayoutFavoritesManagment"
+                    android:layout_width="200dp"
+                    android:layout_height="210dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgFavoritesManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_square_yellow"
+                        android:contentDescription="@string/menu_stores"
+                        android:padding="28dp"
+                        app:srcCompat="@drawable/ic_users" />
+
+                    <Button
+                        android:id="@+id/btnFavoritesManagment"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_square_yellow"
+                        android:padding="0dp"
+                        android:text="Gestión Usuarios"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="@null"
+                        app:fontWeight="900"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

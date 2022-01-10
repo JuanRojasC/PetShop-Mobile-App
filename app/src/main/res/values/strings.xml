@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PetShop</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Menu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_products">Productos</string>
+    <string name="menu_stores">Tiendas</string>
+    <string name="menu_services">Servicios</string>
+    <string name="pets_toys">pets toys</string>
+    <string name="product_description">Producto destinado a tu mascota, con altos estandares de calidad para garantizar su seguridad y diversion.</string>
+    <string name="product_description_template">Descripcion del producto y sus caracteristicas generales, con el fin de atraer la atencion del cliente e incentivar su compra.</string>
+    <string name="buy_product">comprar</string>
+    <string name="available_products">Productos disponibles</string>
+    <string name="avalaible_services">Servicios disponibles</string>
+    <string name="service_description_general">Guarderia, estilista, veterinaria 24/7 o paseador son algunos de nuestros servicios, llama ya.</string>
+    <string name="buy_service">Contratar</string>
+    <string name="visit_store">Visitar</string>
+    <string name="invitation_visit_us">Visitanos</string>
+    <string name="store_description">Te invitamos a visitarnos y vivir una experiencia magica junto a tu mascota, contamos con mas de 25 tiendas a nivel nacional.</string>
+    <string name="action_favorites">Favoritos</string>
+    <string name="action_finder">Buscar</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="welcome_message">Bienvenido</string>
+    <string name="customers">Clientes</string>
+    <string name="managment_products">Gestión Productos</string>
+    <string name="managment_services">Gestión Servicios</string>
+    <string name="managment_stores">Gestión Tiendas</string>
+    <string name="product_image_reference">Product Image Reference</string>
+    <string name="name_product">Name Product</string>
+    <string name="product_favorite_icon">Product Favorite Icon</string>
+    <string name="product_price_template">Desde 99.999</string>
+    <string name="service_image_reference">Service Image Reference</string>
+    <string name="name_service">Name Service</string>
+    <string name="store_image_reference">Store Image Reference</string>
+    <string name="store_city">Store City</string>
+    <string name="address_store">Address Store</string>
+    <string name="visit_us">Visitanos</string>
+    <string name="delete_favorite">Eliminar</string>
+    <string name="managment_products_title">Panel de Productos</string>
+    <string name="add_product">+ Nuevo</string>
+    <string name="management_services_title">Panel de Servicios</string>
+    <string name="management_stores_title">Panel de Tiendas</string>
+    <string name="add_store">+ Nueva</string>
+    <string name="new_product_title">Nuevo Producto</string>
+    <string name="product_form_description">Descripcion</string>
+    <string name="form_product_name">Nombre</string>
+    <string name="form_product_price">Precio</string>
+    <string name="add">Agregar</string>
+    <string name="up_image">Subir</string>
+    <string name="form_product_quantity">Unidades</string>
+    <string name="add_product_action">Nuevo Producto</string>
+    <string name="add_service_action">Nuevo Servicio</string>
+    <string name="add_store_action">Nueva Tienda</string>
+    <string name="success_action">Operacion exitosa</string>
+    <string name="global_warning">Campos Obligatorios*</string>
+    <string name="new_service_title">Nuevo Servicio</string>
+    <string name="new_store_title">Nueva Tienda</string>
+    <string name="form_address_Store">Direccion</string>
+    <string name="store_map_latitud">Latitud</string>
+    <string name="store_form_longitude">Longitud</string>
+    <string name="store_form_city">Ciudad</string>
+    <string name="store_form_state">Estado</string>
+    <string name="config_product_title">Configurar Producto</string>
+    <string name="update_text">Actualizar</string>
+    <string name="delete_text">Eliminar</string>
+    <string name="config_service_title">Configurar Servicio</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoianVhbnJvamFzYyIsImEiOiJja3hkd3didjEwdW5pMnVvNGRtMTVrdWZvIn0.hZMsD0yJaGS_aDKGptMUmw</string>
+    <string name="loading_text">Cargando...</string>
+    <string name="available_services">Servicios Disponibles</string>
+    <string name="error_message">Ha habido un error</string>
+    <string name="saving_text">Guardando...</string>
+    <string name="updating_text">Actualizando...</string>
+    <string name="deleting_text">Eliminando...</string>
+
+    <string-array name="services_mode">
+        <item>Mode</item>
+        <item>Dia</item>
+        <item>Hora</item>
+        <item>Mes</item>
+        <item>Consulta</item>
+    </string-array>
+
+</resources>

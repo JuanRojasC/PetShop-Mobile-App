@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.petshop.ui.start.StartFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.petshop.ui.home.HomeFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.petshop.ui.products.ProductsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_products" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.petshop.ui.services.ServicesFragment"
+        android:label=""
+        tools:layout="@layout/fragment_services"/>
+
+    <fragment
+        android:id="@+id/nav_stores"
+        android:name="com.petshop.ui.stores.StoresFragment"
+        android:label=""
+        tools:layout="@layout/fragment_stores" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.petshop.ui.favorites.FavoritesFragment"
+        android:label=""
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_managment_products"
+        android:name="com.petshop.ui.managment.products.ProductsManagementFragment"
+        android:label=""
+        tools:layout="@layout/fragment_management_products" />
+
+    <fragment
+        android:id="@+id/nav_managment_services"
+        android:name="com.petshop.ui.managment.services.ServicesManagementFragment"
+        android:label=""
+        tools:layout="@layout/fragment_management_services" />
+
+    <fragment
+        android:id="@+id/nav_managment_stores"
+        android:name="com.petshop.ui.managment.stores.StoresManagementFragment"
+        android:label=""
+        tools:layout="@layout/fragment_management_stores" />
+
+    <fragment
+        android:id="@+id/nav_form_product"
+        android:name="com.petshop.ui.form.product.NewProductFragment"
+        android:label=""
+        tools:layout="@layout/fragment_form_product" />
+
+    <fragment
+        android:id="@+id/nav_form_service"
+        android:name="com.petshop.ui.form.service.NewServiceFragment"
+        android:label=""
+        tools:layout="@layout/fragment_form_service" />
+
+    <fragment
+        android:id="@+id/nav_form_store"
+        android:name="com.petshop.ui.form.store.NewStoreFragment"
+        android:label=""
+        tools:layout="@layout/fragment_form_store" />
+
+    <fragment
+        android:id="@+id/nav_config_product"
+        android:name="com.petshop.ui.config.ProductConfigFragment"
+        android:label=""
+        tools:layout="@layout/fragment_config_product" />
+
+    <fragment
+        android:id="@+id/nav_config_service"
+        android:name="com.petshop.ui.config.ServiceConfigFragment"
+        android:label=""
+        tools:layout="@layout/fragment_config_service" />
+
+    <fragment
+        android:id="@+id/nav_config_store"
+        android:name="com.petshop.ui.config.StoreConfigFragment"
+        android:label=""
+        tools:layout="@layout/fragment_config_store" />
+
+    <fragment
+        android:id="@+id/nav_mapbox"
+        android:name="com.petshop.ui.maps.MapBoxFragment"
+        android:label=""
+        tools:layout="@layout/fragment_mapbox" />
+
+    <fragment
+        android:id="@+id/nav_succes"
+        android:name="com.petshop.ui.util.SuccessFragment"
+        android:label=""
+        tools:layout="@layout/fragment_success" />
+
+    <fragment
+        android:id="@+id/nav_error"
+        android:name="com.petshop.ui.util.ErrorFragment"
+        android:label=""
+        tools:layout="@layout/fragment_error" />
+
+    <fragment
+        android:id="@+id/nav_loading"
+        android:name="com.petshop.ui.util.LoadingFragment"
+        android:label=""
+        tools:layout="@layout/fg_loading" />
+
+</navigation>

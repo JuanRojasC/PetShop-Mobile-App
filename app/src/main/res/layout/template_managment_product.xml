@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnLayoutManagmentProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg_borders_blue"
+    android:paddingBottom="10dp"
+    android:paddingHorizontal="20dp"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        app:srcCompat="@drawable/product_template"
+        android:layout_gravity="center"
+        android:contentDescription="@string/product_image_reference" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/name_product"
+        android:textColor="#0097A7"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

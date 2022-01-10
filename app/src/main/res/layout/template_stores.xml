@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgStore"
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:srcCompat="@drawable/store_template"
+            android:layout_gravity="center"
+            android:contentDescription="@string/store_image_reference" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtStoreCity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="@string/store_city"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtStoreAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address_store"
+                android:layout_marginBottom="7dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtStoreDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/store_description"
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnVisitStore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button_red"
+                android:padding="0dp"
+                android:text="@string/visit_store"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black"
+                android:textSize="15sp"
+                app:backgroundTint="@null"
+                app:fontWeight="900"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/main_red"/>
+
+</LinearLayout>

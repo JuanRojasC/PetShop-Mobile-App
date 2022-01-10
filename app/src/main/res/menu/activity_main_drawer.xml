@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            app:iconTint="@drawable/selector"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_product"
+            android:title="@string/menu_products" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_service"
+            app:iconTint="@drawable/selector"
+            android:title="@string/menu_services" />
+        <item
+            android:id="@+id/nav_stores"
+            android:checkable="true"
+            android:icon="@drawable/ic_store"
+            app:iconTint="@drawable/selector"
+            android:title="@string/menu_stores" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:checkable="true"
+            android:icon="@drawable/ic_favorites"
+            app:iconTint="@drawable/selector"
+            android:title="@string/nav_favorites" />
+
+    </group>
+
+</menu>

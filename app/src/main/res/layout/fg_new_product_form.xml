@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1.7"
+            app:srcCompat="@drawable/product_template"
+            android:contentDescription="@string/product_image_reference" />
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_blue"
+            android:text="@string/up_image"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="13sp"
+            app:backgroundTint="@null"
+            app:fontWeight="900"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/globalWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/main_red"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="3dp" >
+
+        <TextView
+            android:id="@+id/labelInputNAme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:text='@string/form_product_name'
+            android:textColor="#0097A7"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:autofillHints="Product Name"
+            android:hint="@string/form_product_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:background="@drawable/bg_borders_blue"
+            android:text=""
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/warningName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/main_red"
+            android:text=""
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="3dp">
+
+        <TextView
+            android:id="@+id/labelInputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:text='@string/product_form_description'
+            android:textColor="#0097A7"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Product Description"
+            android:background="@drawable/bg_borders_blue"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/product_form_description"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:maxLength="500"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/warningDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/main_red"
+            android:layout_marginStart="3dp"
+            android:text=""
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="3dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/labelInputPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text='@string/form_product_price'
+                android:textColor="#0097A7"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:autofillHints="Product Price"
+                android:background="@drawable/bg_borders_blue"
+                android:ems="10"
+                android:hint="@string/form_product_price"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/warningPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/main_red"
+                android:layout_marginStart="3dp"
+                android:text=""
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.7">
+
+            <TextView
+                android:id="@+id/labelInputQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text='@string/form_product_quantity'
+                android:textColor="#0097A7"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Product Price"
+                android:background="@drawable/bg_borders_blue"
+                android:ems="10"
+                android:hint="@string/form_product_quantity"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/warningQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/main_red"
+                android:layout_marginStart="3dp"
+                android:text=""
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

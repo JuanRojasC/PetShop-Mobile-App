@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.maps.MapBoxFragment">
+
+<!--    <org.osmdroid.views.MapView-->
+<!--        android:id="@+id/openStreetMapViewFullScreen"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapboxFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="4.63527342"
+        mapbox:mapbox_cameraTargetLng="-74.07909264"
+        mapbox:mapbox_cameraZoom="15.0"
+        />
+
+</LinearLayout>
